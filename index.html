@@ -7,8 +7,22 @@
     <link  rel="icon"   href="images/shoe.png" type="image/png" /> 
 </head>
 <body>
+    <style>
+        table, th, td {
+        border: 1px solid black;
+        }
+        
+        .titulo{
+            color: brown; text-align: center
+        }
+        .menu{
+            font-style: italic;color: midnightblue;
+        }
+        }
+    </style>
+    
     <header>
-        <h1>Tienda de zapatos</h1>
+        <h1 class="titulo">Tienda de zapatos</h1>
         
     </header>
 
@@ -19,17 +33,15 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt saepe impedit veniam ex praesentium quibusdam, obcaecati consequatur doloremque ea tempora molestias sed possimus, autem ducimus corporis eos qui rem..</p>
 
         
-        <h2>Menu pagina</h2>
+        <h2 class="menu">Menu pagina</h2>
         <ul>
             <li> <a href="#contacto">contacto</a></li>
             <li>video</li>
-            <li>foto</li>
+            <li><a href="#Fundador">foto</a></li>
         </ul>
 
         <br>
-        <img src="images/140.jpg" alt="mi foto" > 
-
-        <br>
+       
         <br>
         <iframe width="360" height="315" 
         src="https://www.youtube.com/embed/CM_A4f9qqzo" frameborder="0"
@@ -39,9 +51,31 @@
         <h2 id="contacto"> contacto </h2>
 
         <table>
+            <tr>
+                <th>Area de la tienda</th>
+                <th>responsable</th>
+                <th>telefono</th>
+            </tr>
 
-            
+            <tr>
+                <td>Ventas</td>
+                <td>Neffer Quintero</td>
+                <td>30000000<s/td>
+            </tr>
         </table>
+
+        <br>
+        <h2 id="Fundador">Fundador</h2>
+        <img src="images/140.jpg" alt="mi foto" > 
+
+        <h3>Formularios</h3>
+        <form>
+            <label for="Nombre completo">Nombre completo</label>
+            <input type="text" id="nombreC" name="nombreC" placeholder="Nombres y apellidos" required>
+            <br>
+            <br>
+
+        </form>
 
 
     </main>
